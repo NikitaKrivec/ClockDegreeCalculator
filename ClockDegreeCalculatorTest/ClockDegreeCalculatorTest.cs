@@ -7,7 +7,7 @@ namespace ClockDegreeCalculatorTest
     [TestClass]
     public class ClockDegreeCalculatorTest
     {
-        private AngleCalculator _angleCalculator;
+        private IAngleCalculator _angleCalculator;
         private double angle;
 
         [TestInitialize]

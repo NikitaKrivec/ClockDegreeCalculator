@@ -2,7 +2,7 @@
 
 namespace ClockDegreeCalculator
 {
-    public class AngleCalculator
+    public class AngleCalculator : IAngleCalculator
     {
         public double GetAngleCalculator(int hours, int minutes)
         {
@@ -11,11 +11,11 @@ namespace ClockDegreeCalculator
                 throw new InvalidHoursException(hours);
             }
 
-            if (minutes < 0 || minutes > 60) 
+            if (minutes < 0 || minutes > 60)
             {
                 throw new InvalidMinutesException(minutes);
             }
-            
+
             if (hours == 12)
             {
                 hours = 0;
